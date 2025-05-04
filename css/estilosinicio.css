@@ -1,0 +1,529 @@
+:root{
+    --color-principal: #04530E;
+    --color-primary-hover:#43A047;
+    --color-verde:#04A75B;
+    --color-negro: #444A47;
+    --color-fondo: #F7F9FD;
+    --color-footer: #151515;
+}
+
+*,::after, ::before{
+    box-sizing: border-box;
+}
+
+*{
+    padding: 0px;
+    margin: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.hg-wrapper{
+    position: relative;
+}
+
+.hg-wrapper, body{
+    min-height: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+    border-style: none;
+}
+
+.bg-fondo{
+    background: var(--color-fondo);
+}
+
+.container{
+    width: 1122px;
+    padding: 0 12px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 1px){
+    .container{
+        width: auto;
+        max-width: 1122px !important;
+    }
+}
+
+.uppercase{
+
+    text-transform: uppercase !important;
+}
+
+/*  ESTILOS: Botones */
+
+.hg-btn{
+    display: inline-block;
+    position: relative;
+    padding: 12px 25px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    outline: 0;
+
+}
+
+.btn-primary{
+    background: var(--color-principal);
+    color: #fff;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.btn-primary:hover{
+    background: var(--color-primary-hover);
+}
+
+/* ESTILOS: Headerhm */
+
+
+.hg-header{
+    position: relative;
+    height: 80px;
+    background: #fff;
+    line-height: 64px;
+    -webkit-transition: all .6s ease-in-out;
+    -moz-transition: all .6s ease-in-out;
+    -ms-transition: all .6s ease-in-out;
+    -o-transition: all .6s ease-in-out;
+    transition: all .6s ease-in-out;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+.hg-header .container{
+    height: 100%;
+}
+
+.hg-header.header-fixed{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 8%);
+    z-index: 99;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.header-menu{
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-menu .hg-logo{
+    width: 300px;
+}
+
+.hg-menu{
+    display: flex;
+    position: relative;
+}
+
+.hg-menu ul{
+    display: flex;
+}
+
+.hg-menu ul li a{
+    color: var(--color-negro);
+    font-size: 17px;
+    margin-right: 30px;
+    display: inline-block;
+}
+
+.hg-menu ul li a:hover{
+    color: var(--color-primary-hover);
+}
+
+.hg-menu .hg-icon-cart{
+    margin-left: 10px;
+}
+
+.hg-menu .hg-icon-cart a{
+    font-size: 45px;
+    color: var(--color-negro);
+    position: relative;
+}
+
+.hg-menu .hg-icon-cart a span{
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    top: 6px;
+    right: -2px;
+    font-size: 10px;
+    border-radius: 50%;
+    background: var(--color-principal);
+    color: #fff;
+    
+}
+
+.hg-ley{
+    background: #fff;
+    padding: 2px 0px;
+}
+
+.hg-ley p{
+    color: #151515;
+    position: relative;
+    text-align: right;
+    font-size: 30px;
+    font-weight: 600;
+    
+}
+
+/* log in */
+
+.hg-log .hg-login{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.hg-log .hg-login .hg-tab{
+    margin: 0px 0px;
+    background: #fff;
+    border:0px solid #EEF5F9;
+    padding: 0.9px 9px;
+    border-radius: 22px;
+    color: #444A47;
+    cursor: pointer;
+    transition: all .3s;
+    font-size: 17px;
+}
+
+.hg-log .hg-login .hg-tab.active,
+.hg-log .hg-login .hg-tab:hover{
+    background: var(--color-principal);
+    color: #fff;
+}
+
+.hg-log .hg-login .hg-tab .active .tabs-content{
+    background: red;
+}
+
+/*ESTILOS: Menu*/
+
+.hg-sign .container {
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+    overflow: auto;
+    width: 800px;
+    max-width: 100%;
+    min-height: 750px;
+    padding: 20px 20px;
+    margin-bottom: 40px;
+}
+
+.hg-sign.container p{
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    margin: 20px 0;
+}
+
+.hg-sign .container span{
+    font-size: 12px;
+}
+
+.hg-sign .container a{
+    color: #333;
+    font-size: 13px;
+    text-decoration: none;
+    margin: 15px 0 10px;
+}
+
+.hg-sign .container button{
+    background-color: #04530E;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.hg-sign .container button.hidden{
+    background-color: transparent;
+    border-color: #fff;
+}
+
+.hg-sign .container form{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    height: 100%;
+}
+
+.hg-sign .container input{
+    background-color: #eee;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+}
+
+.hg-sign .form-container{
+    position: absolute;
+    top:0;
+    height: 100%;
+    transition: all 0.6 ease-in-out;
+}
+
+.hg-sign .sign-in{
+    left:0;
+    width: 50%;
+    z-index: 2;
+}
+
+.hg-sign .container.active .sign-in{
+    transform: translateX(100%);
+}
+
+.hg-sign .sign-up{
+    left:0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.hg-sign .container.active .sign-up{
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+    animation: move 0.6s;
+}
+
+@keyframes move {
+    0%,
+    49.99%{
+        opacity: 0;
+        z-index: 1;
+    }
+    50%,
+    100%{
+        opacity: 1;
+        z-index: 5;
+    }
+    
+}
+
+.hg-sign .social-icons{
+    margin: 20px 0;
+}
+
+.hg-sign .social-icons a{
+    border: 1px solid #ccc;
+    border-radius: 20%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3px;
+    width: 40px;
+    height: 40px;
+}
+
+.hg-sign .toggle-container{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow:hidden;
+    transition: all 0.6s ease-in-out;
+    border-radius: 150px 0 0 100px;
+    z-index: 1;
+}
+
+.hg-sign .container.active .toggle-container{
+    transform: translateX(-100%);
+    border-radius: 0 150px 100px 0;
+}
+
+.hg-sign .toggle{
+    background-color: #04530E;
+    height: 100%;
+    background: linear-gradient(to right, #43A047, #04530E);
+    color: #fff;
+    position: relative;
+    left:-100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+
+.hg-sign .container.active .toggle{
+    transform: translateX(50%);
+}
+
+.hg-sign .toggle-panel{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    text-align: center;
+    top: 0;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+
+.hg-sign .toggle-left{
+    transform: translateX(-200);
+}
+
+.hg-sign .container.active .toggle-left{
+    transform: translateX(0);
+
+}
+
+.hg-sign .toggle-right{
+    right:0;
+    transform: translateX(0);
+}
+
+.hg-sign .container.active .toggle-right{
+    transform: translateX(200%);
+
+}
+
+/* ESTILOS: Footer*/
+
+footer{
+    background: #151515;
+    padding: 80px 0px;
+}
+
+footer .foo-row{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+footer .foo-row .foo-col{
+    width: 50%;
+}
+
+footer .foo-row .foo-col:last-child{
+    margin-left: 50px;
+}
+
+footer .foo-row .foo-col:first-child{
+    margin-right: 50px;
+}
+
+footer .foo-row .foo-col h2{
+    color: #E3E3E3;
+    line-height: 40px;
+    
+
+    font-size: 33px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    
+}
+
+footer form .f-input{
+    width: 100%;
+    position: relative;
+}
+
+footer form .f-input input{
+    width: 100%;
+    display: block;
+    padding: 16px 30px;
+    background: #2C2B2B;
+    border: none;
+    padding-right: 50px;
+    font-size: 15px;
+    border-radius: 25px;
+    outline: 0;
+    color: #A7A1A1;
+}
+
+footer form .f-input .hg-btn-round{
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 42px;
+    height: 42px;
+    border: none;
+    font-size: 18px;margin-right: 3px;
+    cursor: pointer;
+}
+
+
+footer .foo-row .foo-col ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .foo-row .foo-col ul li{
+    width: 50%;
+    margin-bottom: 16px;
+}
+
+footer .foo-row .foo-col ul li a{
+    color: #E3E3E3;
+    font-size: 15px;
+}
+
+footer .foo-row .foo-col ul li a:hover{
+    color: var(--color-principal);
+    text-decoration: underline;
+}
+
+
+.foo-copy{
+    background: #000000;
+    padding: 40px 0px;
+}
+
+.foo-copy p{
+    text-align: center;
+    color: #E3E3E3;
+    font-size: 14px;
+    font-weight: 300;
+}

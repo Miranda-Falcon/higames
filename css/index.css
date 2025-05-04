@@ -1,0 +1,103 @@
+/* ESTILOS: Marcas */
+
+/* GRID LAYOUT */
+[id^="productos-"] {
+    display: grid;
+    grid-template-columns: repeat(4, calc(25% - 2rem * 3/4));
+    row-gap: 2rem;
+    column-gap: 2rem;
+    max-width: 1120px;
+}
+
+/* IMÁGENES Y TRANSICIONES */
+[id^="productos-"] .product-item .p-portada img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+[id^="productos-"] .product-item .p-portada img:hover {
+    transform: scale(1.07);
+}
+
+/* CONTENEDOR PRODUCTO */
+[id^="productos-"] .product-item {
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #EEF5F9;
+    border-radius: 5px;
+}
+
+[id^="productos-"] .product-item:hover {
+    box-shadow: 0px 8px 24px rgba(220, 229, 245, 0.63);
+}
+
+/* IMAGENES EN PRODUCTOS */
+[id^="productos-"] .product-item .p-portada {
+    width: 100%;
+    max-height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* ETIQUETAS (OFERTA, NUEVO, ETC.) */
+[id^="productos-"] .product-item .p-portada .stin {
+    position: absolute;
+    left: 12px;
+    bottom: 12px;
+    background: var(--color-fondo);
+    font-size: 13px;
+    padding: 5px 10px;
+    border-radius: 16px;
+}
+
+[id^="productos-"] .product-item .p-portada .stin.stin-new,
+[id^="productos-"] .product-item .p-portada .stin.stin-oferta {
+    background: var(--color-verde);
+    color: #fff;
+}
+
+/* INFO PRODUCTO */
+[id^="productos-"] .product-item .p-info {
+    padding: 20px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100% - 300px);
+}
+
+/* TITULO PRODUCTO */
+[id^="productos-"] .product-item .p-info h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-negro);
+    line-height: 26px;
+    margin-bottom: 16px;
+}
+
+/* PRECIO */
+[id^="productos-"] .product-item .p-info .precio {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+[id^="productos-"] .product-item .p-info .precio span {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--color-negro);
+}
+
+[id^="productos-"] .product-item .p-info .precio span.thash {
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 10px;
+    color: #A7A7A7;
+    text-decoration: line-through;
+}
+
+/* BOTÓN */
+[id^="productos-"] .product-item .p-info .hg-btn {
+    width: 100%;
+}

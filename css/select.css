@@ -1,0 +1,23 @@
+.custom-select {
+    background-color: #eee;
+    border: none;
+    padding: 10px 15px;
+    margin: 8px 0;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+    appearance: none; /* Elimina el estilo nativo */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Oculta flecha en IE (opcional) */
+  select::-ms-expand {
+    display: none;
+  }
